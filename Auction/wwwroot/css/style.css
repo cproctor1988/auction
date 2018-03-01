@@ -1,0 +1,14 @@
+*{
+    background:rgb(30, 223, 13);
+}
+table,td,tr,th{
+    padding: 10px;
+}
+input{
+    color: palegreen;
+    background: navy;
+}
+.dojo{
+    margin-left: 100px;
+    text-align: center;
+}

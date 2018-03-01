@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="~/css/style.css"/>
+@model Auction.Models.AuctionItem
+
+@{
+    ViewData["Title"] = "New Auction";
+}
+<h1>New Auction</h1>
+<form asp-action="CreateAuction" method="POST">
+    <span asp-validation-for="ProductName"></span>
+    <label asp-for="ProductName"></label>
+    <input asp-for="ProductName"/><br>
+    <span asp-validation-for="Bid"></span>
+    <label asp-for="Bid"></label>
+    <input asp-for="Bid"/><br>
+    <span asp-validation-for="Description"></span>
+    <label asp-for="Description"></label>
+    <input asp-for="Description"/><br>
+    <span asp-validation-for="EndDate"></span>
+    <label asp-for="EndDate"></label>
+    <input Type="Date"asp-for="EndDate"/><br>
+        <br>
+    <input type="hidden" asp-for="UserId" value="@ViewBag.userId">
+    <button type="submit">Create</button>
+</form>

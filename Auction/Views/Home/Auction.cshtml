@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="~/css/style.css"/>
+
+<h1>@Model.ProductName</h1>
+    <h3>Created By: @Model.Auctioner.UserName</h3>
+    <h4>Time Remaining : @Model.Remains Days</h4>
+<p>@Model.Description</p>
+<p>Current Highest Bid: $@Model.Bid By: @Model.HighestBidder</p>
+    <form action="Bid" method="POST" >
+        <label>Amount to Bid</label> 
+        <Input type="Number" name="BidAmount">
+        <Input type="hidden" name="auction1" value="@Model.AuctionId">
+        <Input type="Submit" value="Bid">
+    </form>
+    <h3>@ViewBag.error</h3>
+    
+    

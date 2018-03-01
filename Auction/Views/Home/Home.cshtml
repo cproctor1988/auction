@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="~/css/style.css"/>
+<h3>Welcome @ViewBag.FirstName! </h3>
+<link rel="stylesheet" href="~/css/style.css"/>
+<h1>Current Auctions</h1>
+<table>
+    <thead>
+        <th>Product Name</th>
+        <th>Seller</th>
+        <th>Top Bid</th>
+        <th>Time Remaining</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        @{foreach(var a in Model){
+            
+            <tr></tr>
+            <td>
+                <a href ="Auction/@a.AuctionId">@a.ProductName</a>
+            </td>
+            <td>@a.Auctioner.UserName</td>
+            <td>$@a.Bid</td>
+            <td>@a.Remains Days</td>
+            if(@a.UserId == @ViewBag.userId){
+                <td>
+                    <form action="Delete" method="POST">
+                        <Input type="hidden" name="auction1" value="@a.AuctionId">
+                        <Input type="hidden" name="user1" value="@ViewBag.userId">
+                        <Input type="Submit" value="Delete">
+                    </form>
+                </td>}}
+        }
+        
+    </tbody>
+</table>
+<h4>Your Current Wallet : @ViewBag.Wallet</h4>
+<h1>@ViewBag.error</h1>
+
+<form action="New/@ViewBag.userId">
+    <input type="submit" value="Add New Auction">
+</form>

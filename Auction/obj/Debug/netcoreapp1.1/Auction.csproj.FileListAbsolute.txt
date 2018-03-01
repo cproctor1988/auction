@@ -1,0 +1,8 @@
+C:\Users\Cameron\C#\Auction\bin\Debug\netcoreapp1.1\Auction.deps.json
+C:\Users\Cameron\C#\Auction\bin\Debug\netcoreapp1.1\Auction.runtimeconfig.json
+C:\Users\Cameron\C#\Auction\bin\Debug\netcoreapp1.1\Auction.runtimeconfig.dev.json
+C:\Users\Cameron\C#\Auction\bin\Debug\netcoreapp1.1\Auction.dll
+C:\Users\Cameron\C#\Auction\bin\Debug\netcoreapp1.1\Auction.pdb
+C:\Users\Cameron\C#\Auction\obj\Debug\netcoreapp1.1\Auction.AssemblyInfo.cs
+C:\Users\Cameron\C#\Auction\obj\Debug\netcoreapp1.1\Auction.dll
+C:\Users\Cameron\C#\Auction\obj\Debug\netcoreapp1.1\Auction.pdb

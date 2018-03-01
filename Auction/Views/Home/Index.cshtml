@@ -1,0 +1,37 @@
+﻿<link rel="stylesheet" href="~/css/style.css"/>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Auction.Models.RegisterViewModel
+<h2>Login</h2>
+@{
+    <h3>@ViewBag.error</h3>
+}
+<form asp-action="Login" method="post">
+    <label asp-for="UserName"></label>
+    <input asp-for="UserName"/>
+    <label asp-for="Password"></label>
+    <input asp-for="Password"/>
+    <button type="submit">Login</button>
+</form>
+ <h2>Register</h2>
+<form asp-action="Register" method="post">
+    <span asp-validation-for="FirstName"></span>
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName"/><br>
+    <span asp-validation-for="LastName"></span>
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName"/><br>
+    <span asp-validation-for="UserName"></span>
+    <label asp-for="UserName"></label>
+    <input asp-for="UserName"/><br>
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label>
+    <input asp-for="Password"/><br>
+    <label asp-for="PasswordConfirmation"></label>
+    <input asp-for="PasswordConfirmation"/><br>
+    <button type="submit">Create new User</button>
+</form>
+
+ 
+
